@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from "react"
+import logo from "./logo.svg";
+import "./App.css";
+// import Center from "./components/center";
+// import { folder } from "./components/FolderConstants";
+// import FolderStructure from "./components/FolderStructure";
+// import Resize from "./components/Resize";
+// import {makeRandomAPICall} from "./components/CallApi";
+import StaticComp from "./components/StaticComp";
+import Quote from "./components/Quote/Quote";
+import Material from "./components/Material";
+
+//RUN - cd first-app;  npm start
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <section>
+            {/* <Quote/> */}
+            {/* <StaticComp /> */}
+            <Material />
+        </section>
+    );
 }
 
 export default App;
