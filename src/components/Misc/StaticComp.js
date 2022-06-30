@@ -1,17 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./styles/StaticComp.css";
+// import "./styles/StaticComp.css";
 
 //Counter - increment counter after every second
 
 function StaticComp() {
 
     const [time, setTime] = useState(new Date());
+    const [count, setCount] = useState(0)
     var timer = useRef();
 
 
     useEffect(()=>{
         timer = setInterval(()=>{
-            setTime(new Date());
+            setCount(count+1)
         },1000);
     })
 
@@ -24,7 +25,7 @@ function StaticComp() {
     return(
         <section>
             <h1 style={{color:"green"}}>Static component</h1>
-            <div id="firstDiv">{time.getHours() +":" + time.getMinutes() + ":"+time.getSeconds()}</div>
+            <div id="firstDiv">{count}</div>
         </section>
     )
 }
