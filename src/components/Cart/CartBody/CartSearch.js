@@ -13,7 +13,6 @@ export default function CartSearch() {
                 result.push(...products[key])
             }
         }
-        console.log(result);
         setAllProducts(result);
     },[products]);
 

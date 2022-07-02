@@ -15,18 +15,22 @@ import {
   import StaticComp from "./components/Misc/StaticComp";
   import {CartContextProvider} from "./components/Cart/CartBody/CartContext";
   import InfiniteScroll from "./components/Generic/InfinitScroll/InfiniteScroll";
+  import Github from "./components/Github/Github";
+//   import CallbackMemo from "./components/Hooks/CallbackMemo";
 
 function App() {
 
     return (
         <section>
-            <CartContextProvider>
+            {/* <CartContextProvider>
                 <CartRouter />
             </CartContextProvider>
             <Resize />
             <StaticComp />
-            {/* <Rough folder={folder}/> */}
-            <InfiniteScroll />
+            <Rough folder={folder}/>
+            <InfiniteScroll /> */}
+            <Github />
+            {/* <CallbackMemo /> */}
         </section>
     );
 }
