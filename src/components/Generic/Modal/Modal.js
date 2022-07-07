@@ -3,16 +3,9 @@ import ReactDOM from 'react-dom';
 import "./styles/Modal.css";
 
 export default function Modal({open, children, onClose, sx, footer, title}) {
-
-    // useEffect(()=>{
-    //     const div1 = document.createElement('div');
-    //     div1.className = 'My-Modal';
-    //     document.body.appendChild(div1);
-    // },[]);
-
     const getModalContent = () => {
         return (
-            <section className="My-Modal-Wrapper" onClick={onClose} style={{sx}}>
+            <section className="My-Modal-Wrapper" style={{sx}}>
                 <section className="My-Modal-Content-Wrapper">
         <section>{title}</section>
         {children}

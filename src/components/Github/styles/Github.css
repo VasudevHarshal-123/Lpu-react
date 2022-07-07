@@ -8,3 +8,15 @@
     display:flex;
     justify-content: space-between;
 }
+
+.parallax-class {
+    background-image: url("https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

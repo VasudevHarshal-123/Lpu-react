@@ -7,6 +7,7 @@ import ProductCatergory from "./ProductCatergory";
 import ShoppingCart from "./ShoppingCart";
 import LinearProgress from "../../Generic/LinearProgress/LinearProgress";
 import ProjectAccordian from "./ProjectAccordian";
+import Scarne from "../../Scarne/Scarne";
 // Search Bar
 
 function CartBody() {
@@ -21,7 +22,7 @@ function CartBody() {
 
     return (
         <section>
-            <LinearProgress value ={scrolled}/>
+            {/* <LinearProgress value ={scrolled}/> */}
             <ProductCatergory />
             <PopularSlider />
             <TodoContextProvider>
@@ -29,6 +30,7 @@ function CartBody() {
             </TodoContextProvider>
             <ReviewSlider />
             <ProjectAccordian />
+            <Scarne />
         </section>
     );
 }

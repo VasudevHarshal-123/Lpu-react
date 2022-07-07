@@ -125,11 +125,18 @@ function Github() {
         </section>
     }
 
+    const getParallax = () =>{
+        return <div className="parallax-class">
+            <h1>Hello</h1>
+        </div>
+    }
+
   return (
     <div>
         {getSearchBar()}
         {getLanguageFilter()}
         {getSortMenu()}
+        {getParallax()}
         {getFilteredData()}
         {getRepoCards()}
     </div>

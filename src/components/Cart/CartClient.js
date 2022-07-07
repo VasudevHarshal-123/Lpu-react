@@ -32,8 +32,18 @@ async function getPopularProducts(setData) {
     })
 }
 
+async function sendReviewData(data, setIsModalOpen) {
+    axios.post('http://localhost:4001/postReviewData', data)
+    .then((val)=>{
+        setIsModalOpen(false);
+    }).catch((error)=>{
+        console.log("error")
+    })
+}
+
 export {
     getProducts,
     getReviews,
-    getPopularProducts
+    getPopularProducts,
+    sendReviewData
 }
